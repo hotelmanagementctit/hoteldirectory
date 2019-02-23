@@ -1,0 +1,228 @@
+<html>
+<head>
+
+<title>
+	Book A Room
+
+</title>
+
+<Link Type="text/css" rel="stylesheet" href="main.css">
+
+<Script src="Homepage.js">
+
+</Script>
+</head>
+
+
+<body>
+	<Div style="width:100%; height:100%; margin:0;">
+		
+		<Div style="width:100%; height:125px; margin:0; background-color:white; position:fixed ;z-index:1; top:0px;">
+		
+			<Center>
+				<Img id="imageNoEffect" src="Royal Logo.png" width="150px" height="67px" valign="center">
+			
+				<H3 style="letter-spacing: 15px; color:dimgrey ;">
+					[ THE ROYAL HOTEL ]
+				</H3>
+
+			</Center>
+			
+			
+			
+			<Button id="lightshade" style="margin-top:-70px; margin-right:22px; width:90px;  float:right; font-size:10px; border-style:solid; border-color:black; border-width:thin; text-align:center; height:30px;" value="visible" onClick="extend(id,value)">BOOK&nbsp;NOW</Button>
+			
+			<Button id="lightshade" style="margin-top:-70px; margin-right:125px;  float:right; font-size:25px; height:30px; width:27px; border-style:solid; border-color:black; border-width:thin; border-radius:100%;text-align:center; " onClick="window.location.href='http://www.facebook.com'"><B>f</B></Button>
+ 		
+			<Button id="noeffect" value="visible" style="margin:-70px auto auto 50px; float:left; border-style:solid; border-color:black; border-width:thin;" onClick="extend(id,value)">
+
+				<span style="float:left;">
+					<div id="menu"></div>
+					<div id="menu"></div>
+					<div id="menu"></div>
+				</span>
+
+				<span style="float:right; margin-left:5px; margin-top:3px;">
+					MENU
+				</span>
+					
+			</Button>
+		
+		</Div>
+
+
+
+		<Div id="extend1" style="width:100%;  margin-top:9px; background-color:black; z-index:1;  visibility:hidden; position:fixed;">
+				
+				<TABLE border=0 align="center">
+					
+					<TH><BUTTON value="hidden" style="font-size:200%; color:white; background-color:black; outline:none; border:none; "onClick="extend(value)">X</BUTTON>&nbsp</TH>
+					<TH><a id="bookbar" href="Book A Table.html">|&nbsp;BOOK&nbsp;A&nbsp;TABLE&nbsp;</a></TH>
+					<TH><a id="bookbar" href="Book A Room.html">|&nbsp;BOOK&nbsp;A&nbsp;ROOM&nbsp;</a></TH>
+					<TH><a id="bookbar" href="Book A Wedding.html">|&nbsp;BOOK&nbsp;A&nbsp;WEDDING&nbsp;</a></TH>
+					<TH><a id="bookbar" href="Book An Event.html">|&nbsp;BOOK&nbsp;A&nbsp;EVENT&nbsp;|</a></TH>
+				</TABLE>	
+			
+		</Div>
+
+
+		
+		<Div id="menuBar" style="width:345px; margin-top:9px; height:100%; background-color:black; position:fixed; z-index:1; visibility:hidden;" >
+		
+			<DL>
+				<H3><DD><BUTTON value="hidden" id="no" style="float:right; font-size:130%; color:white; background-color:black; outline:none; border:none; "onClick="extend(id,value)">X</BUTTON>&nbsp</DD>
+				<DD><BR><A id="InsideMenu" style="font-size:100%;" href="Homepage.html" >HOME</A></DD>
+				<DD><BR><A id="InsideMenu" style="font-size:100%;" href="About Us.html" >ABOUT US</A></DD>
+				<DD><BR><A id="InsideMenu" style="font-size:100%;" href="The Fifty Five.html" >THE FIFTY FIVE</A></DD>
+				<DD><BR><A id="InsideMenu" style="font-size:100%;" href="Room.html" >ROOMS</A></DD>
+				<DD><BR><A id="InsideMenu" style="font-size:100%;" href="Wedding.html" >WEDDINGS</A></DD>
+				<DD><BR><A id="InsideMenu" style="font-size:100%;" href="Celebration.html" >CELEBRATIONS</A></DD>
+				<DD><BR><A id="InsideMenu" style="font-size:100%;" href="Meeting And Events.html" >MEETING AND EVENTS</A></DD></H3>
+			</DL>
+	
+		</Div>
+
+
+
+
+
+
+
+
+		<Div style="width:100%; font-style:Monotype Corsiva; margin-top:116px;">
+			
+			<Br><BR>
+			<center>
+
+				<Div style="margin:150px auto 150px auto; width:1000px; background-color:#f4f6f7; box-shadow:5px 15px 20px silver; ">
+					
+					<Br>
+					<H2>SELECT&nbsp;DATES</H2>
+					<HR width=170px style="border-color:black;">
+					<HR width=170px style="border-color:black;" >
+					<BR>
+					
+					<Div style="width:950px; background-color:white; font-size:13px; box-shadow:5px 5px 25px darkgrey;">
+	
+						<BR><BR>
+	
+						<TABLE width=100%>
+							<TR >
+								<TH><Img src="tick.png"> 
+								<TH>Fitness and Creation
+								<TH><Img src="tick.png">
+								<TH>Airport Pick And Drop
+								<TH><Img src="tick.png">
+								<TH>Spa
+							</TR>
+							<TR>
+								<TH><Img src="wifi.png">
+								<TH>Free Wi-fi
+								<TH><Img src="parking.png">
+								<TH>Free Parking
+								<TH><Img src="terrace.png">
+								<TH>Outside terrace	
+							</TR>	 
+						</TABLE>
+
+
+						<BR><BR>
+						
+						<B>Arrival Date : <input type="Date" style="text-align:center; width:290px; height:30px; " class="RoomLayout" id="RADate" onChange="checkDate(id)">&nbsp;&nbsp;&nbsp;&nbsp;
+						<B>Departure Date: <input type="Date" style="text-align:center; width:290px; height:30px; " class="RoomLayout" id="RDDate" onChange="checkDate(id)"></B>&nbsp;&nbsp;&nbsp;&nbsp;
+						
+						<BR><BR><BR>
+						<B>Rooms : <input type="Number" min="1" style="text-align:center; width:50px; height:30px; " class="RoomLayout"  id="RRooms" onBlur="checkThree(id)"></B>&nbsp;&nbsp;&nbsp;&nbsp;
+						<B> Adults : <input type="Number" min="1" style="text-align:center; width:50px; height:30px; " class="RoomLayout"  id="RAdults" onBlur="checkThree(id)"></B>&nbsp;&nbsp;&nbsp;&nbsp;
+						<B> Children : <input type="Number" min="0" style="text-align:center; width:50px; height:30px; " class="RoomLayout" id="RChildren" onBlur="checkThree(id)"></B>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+						<BR><BR>
+
+						<Button class="lightshade" id="SCode" style="float:left; width:50%; ouline:none; border:none;"  value="none" onClick="RoomAdvance(id,value)">SPECIAL  CODES</Button>
+						<Button class="lightshade" id="ASearch" style="float:right; width:50%;  ouline:none; border:none;" value="none" onClick="RoomAdvance(id,value)">ADVANCED SEARCH</Button>
+						<BR><BR><BR>
+
+						<Div style="width:100%;">
+	
+							<TABLE style="border:none; width:100%;">
+
+								<TR>
+									<TD rowspan=2 align="center" ><Span id="SCode1" style="display:none;" ><B>Promotion Code <Input type="text" style="border-color:black; border-style:solid; border-width:thin; outline:none;" id="RPromo" ></B></span>
+
+									<TD align="center"><Button  id="ASearch1" style=" border-color:black; border-style:solid; border-width:thin; outline:none; background-color:white; color:black; display:none; " value="none" onClick="RoomAdvance(id,value)" >Room Type</Button>
+								</TR>
+
+								<TR>
+									<TD >
+									<span style="font-size:10px; text-align:center; display:none;" id="ASearch11">
+									<B>Standard Single :<Input type="radio" name="Advance" id="RoomType0" style="outline:none;" checked>&nbsp;&nbsp;&nbsp;
+									Standard Double: <Input type="radio" name="Advance" id="RoomType1" style="outline:none;"><BR> 
+									Executive Double :<Input type="radio" name="Advance" style="outline:none;" id="RoomType2" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									Royal Suite : <Input type="radio" name="Advance" style="outline:none;" id="RoomType3"><Br></B></span>
+								</TR>
+
+							</TABLE>
+
+							<BR>
+							<Button id="lightshade" style="border-style:solid; border-color:black; border-width:thin;" onClick="validateBookRoom()">submit</Button>
+						</Div>
+						<BR><BR>
+					</Div>
+							
+				<BR><BR>			
+				</Div>
+				
+			</Center>
+			<BR>
+			</Span>
+		</Div>
+
+
+
+
+		
+
+
+
+
+		<div style="width:100%; align:center; height:300; background-color:ghostwhite; padding-top:90;" >
+		
+			<TABLE align="center" height="50%" width="44%" valign="middle" cellpadding=2 style="Table-layout:fixed;" >
+			
+			
+				<TR>
+					<TD rowspan="4" align="center"> 
+						<img src="brand.jpg">
+					</TD Valign="middle" align="center">
+				
+				
+					<TD align="center" rowspan="4":>
+						<UL><H5>
+							<LI><A id="footer" href="Homepage.html" target="_top" > HOME</A></LI><BR>
+							<LI><A id="footer" href="About Us.html" target="_top"> ABOUT US</A></LI><BR>
+							<LI><A id="footer" href="Meeting And Events.html" target="_top"> EVENTS</A></LI><BR>
+							<LI><A id="footer" href="The Fifty Five.html" target="_top">The Fifty Five</A></LI><BR></H5>
+						</UL>
+					</TD>
+				
+				
+					<TD rowspan="4" valign="middle" align="center" >
+						<H4><U>The Royal Hotel</U>,<BR>
+							A14 Civilline, <BR>Delhi<BR><BR>
+
+							<U>Tel: 01786 832 284</U><BR>
+	  						<A href="mailto:sales@royalhotel.com">Mail To Us</A><BR>
+
+							<U> Royal Hotel, Stirling 2017</U>.
+						</H4>
+					</TD>
+				</TR>
+
+			</TABLE>
+
+
+		</div>
+	</Div>
+</BODY>
+</HTML>

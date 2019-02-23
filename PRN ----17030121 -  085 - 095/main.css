@@ -1,0 +1,93 @@
+TD{	width:50%;}
+
+#noPointer{
+		cursor:default;}
+
+#menu{
+	width:20px;
+	height:3px;
+	margin:3px 0;
+	background-color:black;
+	color:grey;
+	}
+
+h1{ line-height:2px;}
+
+#InsideMenu{ color:gray;}
+
+#InsideMenu:hover{ color:white;}
+
+.lightshade{ color:Dimgrey;}
+
+#noeffect:hover{ color:Black;
+		background-color:white;
+		}
+
+.noEffect:hover{ color:black;
+		backgrond-color:white;
+		}
+
+#Event{
+	float:right;
+	margin-right:10px; 
+	border-color:black; 
+	border-width:thin; 
+	height:30px;}
+
+#bookbar{
+	color:white;
+}
+
+
+.ButtonLayout{
+		 border-color:black; border-style:solid; border-width:thin;
+		}
+
+#imageNoEffect{
+		filter:brightness(115%);}
+
+
+img{	filter:brightness(90%);}
+
+img:hover{filter:brightness(130%);}
+
+LI:hover{background-color:silver;
+         border-top-style:solid;
+	 border-top-color:DarkSlateGray;}
+
+A{text-decoration:none;}
+
+#footer{ color:purple;}
+
+table{border-top-style:double;
+	  border-bottom-style:double;}
+
+Button:hover, #lightshade:hover {
+		background-color:#000000;
+		cursor:pointer;
+		color:white;
+	   }
+
+Button{
+	background-color:white;
+	outline:none;
+	color:black;
+	}
+
+#buttonchange{
+		font-size:200%;
+		}
+
+#Room{	width:33%;}
+
+.RoomLayout{	align:left;  
+		background-color:white ; 
+		outline:none; 
+		border-style:solid ; 
+		border-radius:0.5%; 
+		border-width:thin;
+	}
+
+body {
+	margin:0;}
+
